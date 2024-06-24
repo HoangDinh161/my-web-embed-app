@@ -1,25 +1,22 @@
-import logo from './logo.svg';
+// src/App.js
+import React, { useEffect } from 'react';
 import './App.css';
 
 function App() {
+
+  useEffect(() => {
+   
+  }, [])
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Embedded Web Apps</h1>
+      <div className="iframe-container">
+        <iframe src="https://ichizero-gpt.com/application-trans" title="App 1" className="iframe"></iframe>
+        <iframe src="https://ichizero-gpt.com/application-peer" title="App 2" className="iframe"></iframe>
+      </div>
     </div>
   );
 }
+
 
 export default App;
